@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Card</title>
+    <!-- internal css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- card iteam 01 -->
+    <h1 class="my-3 text-center">Interactive Card</h1>
+    <div class="container">
+      <div class="row bg-white shadow rounded my-3 py-4">
+        <div class="col-md-3">
+          <img
+            class="img-fluid d-block mx-auto mt-4"
+            src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?q=80&w=1532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="laptop"
+            width="150px"
+          />
+          <h2 class="text-center mb-4 fs-6 pt-3">Macbook 2024</h2>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="d-flex align-items-cenetr justify-content-cente mt-4 pt-4"
+          >
+            <button
+              class="btn btn-danger"
+              onmousedown="handleproductchange('laptop',false)"
+            >
+              Privious
+            </button>
+            <input
+              class="mx-2 text-center form-control"
+              value="1"
+              type="text"
+              name=""
+              id="laptop-count"
+            />
+            <button
+              class="btn btn-success"
+              onmousedown="handleproductchange('laptop',true)"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <h3 class="text-center mt-5 pt-2">$<span>149000</span></h3>
+        </div>
+      </div>
+    </div>
+    <!-- card iteam 02 -->
+    <div class="container">
+      <div class="row bg-white shadow rounded my-3 py-4">
+        <div class="col-md-3">
+          <img
+            class="img-fluid d-block mx-auto mt-4"
+            src="https://atlas-content-cdn.pixelsquid.com/assets_v2/246/2468938011518178390/previews/G03-200x200.jpg"
+            alt="earphon image"
+            width="100px"
+          />
+          <h2 class="text-center mb-4 fs-6 pt-3">Apple earphone pro 2024</h2>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="d-flex align-items-cenetr justify-content-cente mt-5 pt-4"
+          >
+            <button
+              class="btn btn-danger"
+              onmousedown="handleproductchange('earphone',false)"
+            >
+              Privious
+            </button>
+            <input
+              class="mx-2 text-center form-control"
+              value="1"
+              type="text"
+              name=""
+              id="earphone-count"
+            />
+            <button
+              class="btn btn-success"
+              onmousedown="handleproductchange('earphone',true)"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <h3 class="text-center mt-5 pt-4">$<span>2460</span></h3>
+        </div>
+      </div>
+    </div>
+    <!-- card iteam 03 -->
+    <div class="container">
+      <div
+        class="row bg-white shadow rounded my-3 py-4 d-flex p-4 form-control"
+      >
+        <div class="col-md-8">
+          <h3 class="p-2 fs-6">Subtotal :</h3>
+          <h3 class="p-2 fs-6">TAX :</h3>
+          <h3 class="p-2 fs-6">Grand Total :</h3>
+        </div>
+        <div class="col-md-4">
+          <h3 class="p-2 fs-6">$<span id="sub-total">151460</span></h3>
+          <h3 class="p-2 fs-6">$<span id="tex-amount">53011</span></h3>
+          <h3 class="p-2 fs-6">$<span id="grand-total">204471</span></h3>
+        </div>
+      </div>
+      .
+      <button
+        class="btn btn-info mt-3 mx-auto d-block px-5 py-3 text-white fw-bold mb-4"
+        onclick="checkout()"
+      >
+        Check Out
+      </button>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
